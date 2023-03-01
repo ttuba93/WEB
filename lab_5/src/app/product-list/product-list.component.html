@@ -1,0 +1,17 @@
+<h2>Products</h2>
+
+<button type="button" (click)="onSelect('electronics')">Electronics</button>
+
+<button type="button" (click)="onSelect('fashion')">Fashion</button>
+
+<button type="button" (click)="onSelect('books')">Books</button>
+
+<button type="button" (click)="onSelect('jewerly')">Jewerly</button>
+
+<app-product-item [selectedProduct]="selectedProduct"></app-product-item>
+
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+-->
