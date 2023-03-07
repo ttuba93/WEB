@@ -1,0 +1,11 @@
+<p>albums-detail works!</p>
+<div *ngFor="let album of album">
+    <table>
+    <td>{{album.id}}</td>
+    <td>{{album.title}}</td>
+    <td>
+        <a routerLink ="/photos"  routerLinkActive="active" ariaCurrentWhenActive="page">
+            Photos
+        </a>
+    </td> </table>
+</div>

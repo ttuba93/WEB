@@ -1,0 +1,28 @@
+<h1>Albums List</h1>
+    <thead>
+            <tr>
+                <th colspan="1">Id</th>
+                <th>Title</th>
+                <!-- <th>Photo</th> -->
+            </tr>
+        </thead>
+        <div *ngFor="let album of album">
+    
+    <table [title]="album.title + ' details'">
+        
+        <tbody>
+            <tr>
+                <td>{{album.id}}</td>
+                <td>{{album.title}}</td>
+                <td>
+                    <button type="button" (click)="remove(album)">Remove</button>
+                </td>
+                <td>
+]                    <a routerLink ="/albums/{{album.id}}"  routerLinkActive="active" ariaCurrentWhenActive="page">
+                        Show
+                    </a>
+                </td> 
+            </tr>
+        </tbody>
+    </table>
+</div>

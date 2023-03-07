@@ -1,0 +1,25 @@
+<p>albums-photos works!</p>
+<h1>Photos List</h1>
+<thead>
+    <tr>
+        <th colspan="1">Id</th>
+        <th>Title</th>
+        <th>URL</th>
+    </tr>
+</thead>
+<div *ngFor="let photo of photo">
+    
+    <table [title]="photo.title + ' details'">
+        
+        <tbody>
+            <tr>
+                <td>{{photo.id}}</td>.
+                <td>{{photo.title}}</td>
+                <!-- <td>{{photo.url}}</td> -->
+                <td>    
+                    <button type="button" (click)="share(photo.thumbnailUrl)">Share</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
