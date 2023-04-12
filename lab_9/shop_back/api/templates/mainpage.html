@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Getting Started</title>
+     <base href="/" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="{% static 'main.css' %}" rel="stylesheet" type="text/css">
+</head>
+  <body class="mat-typography">
+    <a href="{% url 'api/cat' %}">Category</a>
+    <a href="{% url 'pro' %}">Products</a>
+    
+    <!-- <h2>Products</h2>
+    <button mat-raised-button style= 'background-color: deepskyblue' (click)="onSelect('electronics')">Electronics</button>
+    <button mat-raised-button style= 'background-color: pink' (click)="onSelect('fashion')">Fashion</button>
+    <button mat-raised-button style= 'background-color: burlywood' (click)="onSelect('books')">Books</button>
+    <button mat-raised-button style= 'background-color: darkseagreen' (click)="onSelect('jewerly')">Jewerly</button>
+    <app-product-item [selectedProduct]="selectedProduct"></app-product-item>
+
+    <div *ngFor="let product of products">
+        <div *ngIf="product.category == selectedProduct">
+          <h3>
+            <a [title]="product.name + ' details'">
+              {{ product.name }}
+            </a>
+          </h3>
+      
+          <p *ngIf="product.description">Description: {{ product.description }}</p>
+          <img src="{{ product.image }}" style="width:20%; height:20%;" />
+      
+          <button mat-raised-button style="background-color: rgb(212, 78, 145);" (click)="like(product)">
+            Like | {{ product.likes }}
+          </button>
+          <button mat-raised-button style="background-color: rgb(78, 125, 212);" (click)="remove(product)">Remove</button>
+          <button mat-raised-button style="background-color: rgb(180, 218, 86);" (click)="share(product.url)">Share</button>
+      
+          <app-product-alerts [product]="product" (notify)="onNotify()">
+          </app-product-alerts>
+        </div>
+      </div> -->
+      
+  </body>
+</html>
