@@ -1,0 +1,37 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+table,
+th,
+td {
+  border: 1px solid rgb(118, 200, 221);
+  color: black;
+}
+
+tr:hover {
+  background-color: greenyellow;
+}
+
+th {
+  color: white;
+}
+
+button {
+  border-radius: 12px;
+  background-color: aqua;
+  color: white;
+  cursor: pointer;
+}
+.nameC {
+  background-color: aqua;
+  color: black;
+}
+.pr {
+  background-color: antiquewhite;
+  color: black;
+}
