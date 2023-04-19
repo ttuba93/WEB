@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Categories</title>
+        <link href="{% static 'main.css' %}" rel="stylesheet" type="text/css">
+
+    </head>
+    <body>
+        <style>
+        .pr {
+            background-color: green;
+            color: white;
+            /* padding: 10px; */
+        }
+        </style> 
+
+        <div class="container">
+            <h1 style="padding-bottom: 30px">Categories</h1>
+            <table>
+                <thead>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Products List</th>
+                </thead>
+                
+                {% for category in Category %} 
+                <tr>
+                    <td>{{ category.category_id }}</td>
+                    <td class="nameC">{{ category.category_name }}</td>
+                    <td><a class="pr" href="{{ category_id }}/products/">Products</a></td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </body>
+</html>
