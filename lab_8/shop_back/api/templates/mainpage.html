@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Main</title>
+     <base href="/" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="https://cdn3.vectorstock.com/i/1000x1000/83/47/online-shopping-icon-flat-design-vector-8188347.jpg" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="{% static 'main.css' %}" rel="stylesheet" type="text/css">
+</head>
+  <body>
+    <style>
+      a{
+        padding: 20px;
+        border-radius: 10px;
+        background-color: green;
+        color: white;
+        text-decoration: none;
+      }
+    </style>
+    <a href="api/categories">Category</a>
+    <a href="api/products">Products</a>
+  </body>
+</html>
